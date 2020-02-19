@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C2C9856-B3BC-4FDD-A299-8BE11D068F9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allEmployeesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allEmployeesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allEmployeesReportByDesignation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allEmployeesReportByDesignation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allEmployeesReportByHireDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allEmployeesReportByHireDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allEmployeesReportByID.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allEmployeesReportByID.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allEmployeesReportBySalary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allEmployeesReportBySalary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allGMOrders.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allGMOrders.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allPassengerDetailsByDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allPassengerDetailsByDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="allPassengerName.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allPassengerName.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="AllPassengersReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllPassengersReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="byScheduleID.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>byScheduleID.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeLogs.Designer.cs">
+      <DependentUpon>frmEmployeeLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassengerLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassengerLogs.Designer.cs">
+      <DependentUpon>frmPassengerLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generateTic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>generateTic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ticketByID.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticketByID.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ticketsBySource.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticketsBySource.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAddStations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddStations.designer.cs">
+      <DependentUpon>frmAddStations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddStationsToRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddStationsToRoute.Designer.cs">
+      <DependentUpon>frmAddStationsToRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoachDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoachDetails.Designer.cs">
+      <DependentUpon>frmCoachDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCoachesToTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCoachesToTrain.Designer.cs">
+      <DependentUpon>frmAddCoachesToTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSchedule.designer.cs">
+      <DependentUpon>frmAddSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassDetails.designer.cs">
+      <DependentUpon>frmClassDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTrain.designer.cs">
+      <DependentUpon>frmAddTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPassenger.Designer.cs">
+      <DependentUpon>frmAddPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCompany.Designer.cs">
+      <DependentUpon>frmAddCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddTicket.Designer.cs">
+      <DependentUpon>frmAddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateOrdersReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateOrdersReport.Designer.cs">
+      <DependentUpon>frmGenerateOrdersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGMOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGMOrderDetails.Designer.cs">
+      <DependentUpon>frmGMOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGMTicketDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGMTicketDetails.Designer.cs">
+      <DependentUpon>frmGMTicketDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGMTicketDetailsByDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmGMTicketDetailsByDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmRemoveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveOrder.Designer.cs">
+      <DependentUpon>frmRemoveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompanyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompanyDetails.Designer.cs">
+      <DependentUpon>frmCompanyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPassenger.Designer.cs">
+      <DependentUpon>frmEditPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditRoute.designer.cs">
+      <DependentUpon>frmEditRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRoute.Designer.cs">
+      <DependentUpon>frmAddRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEmployee.Designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminPanel.Designer.cs">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLogin.Designer.cs">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coach.cs" />
+    <Compile Include="CoachTrainLog.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeAddress.cs" />
+    <Compile Include="frmEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditEmployee.Designer.cs">
+      <DependentUpon>frmEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditTrain.Designer.cs">
+      <DependentUpon>frmEditTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateTicket.Designer.cs">
+      <DependentUpon>frmGenerateTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetOrder.Designer.cs">
+      <DependentUpon>frmGetOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetOrderDetails.Designer.cs">
+      <DependentUpon>frmGetOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetPayment.Designer.cs">
+      <DependentUpon>frmGetPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveCompany.Designer.cs">
+      <DependentUpon>frmRemoveCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveSchedule.designer.cs">
+      <DependentUpon>frmRemoveSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketDetails.Designer.cs">
+      <DependentUpon>frmTicketDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlaceOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlaceOrder.Designer.cs">
+      <DependentUpon>frmPlaceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveEmployee.Designer.cs">
+      <DependentUpon>frmRemoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemovePassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemovePassenger.Designer.cs">
+      <DependentUpon>frmRemovePassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveTrain.Designer.cs">
+      <DependentUpon>frmRemoveTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchEmployee.Designer.cs">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchSchedule.designer.cs">
+      <DependentUpon>frmSearchSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchStation.Designer.cs">
+      <DependentUpon>frmSearchStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchTrain.Designer.cs">
+      <DependentUpon>frmSearchTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStationDetails.Designer.cs">
+      <DependentUpon>frmStationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetEmployeeDetails.designer.cs">
+      <DependentUpon>frmGetEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrainDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrainDetails.Designer.cs">
+      <DependentUpon>frmTrainDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewProfile.Designer.cs">
+      <DependentUpon>frmViewProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewSchedule.Designer.cs">
+      <DependentUpon>frmViewSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generateTicket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>generateTicket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gmAllOrdersByComp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gmAllOrdersByComp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gmOrdersToFromDate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gmOrdersToFromDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gmTodayOrders.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gmTodayOrders.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="ordersDataSet.cs">
+      <DependentUpon>ordersDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ordersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ordersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ordersReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ordersReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Passenger.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="PlaceOrder.cs" />
+    <Compile Include="frmRemoveRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveRoute.designer.cs">
+      <DependentUpon>frmRemoveRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveStation.Designer.cs">
+      <DependentUpon>frmRemoveStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveTicket.Designer.cs">
+      <DependentUpon>frmRemoveTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Route.cs" />
+    <Compile Include="RouteStationLog.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="frmSearchPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchPassenger.designer.cs">
+      <DependentUpon>frmSearchPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchRoute.designer.cs">
+      <DependentUpon>frmSearchRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleDateLog.cs" />
+    <Compile Include="Seat.cs" />
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGMLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGMLogin.Designer.cs">
+      <DependentUpon>frmGMLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGMPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGMPanel.Designer.cs">
+      <DependentUpon>frmGMPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperatorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperatorLogin.Designer.cs">
+      <DependentUpon>frmOperatorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperatorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperatorPanel.Designer.cs">
+      <DependentUpon>frmOperatorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmAddCoaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCoaches.designer.cs">
+      <DependentUpon>frmAddCoaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="frmMainPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainPanel.Designer.cs">
+      <DependentUpon>frmMainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticketByDestination.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticketByDestination.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ticketDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticketDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ticketDetailsAll.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticketDetailsAll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Train.cs" />
+    <EmbeddedResource Include="allEmployeesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allEmployeesReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allEmployeesReportByDesignation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allEmployeesReportByDesignation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allEmployeesReportByHireDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allEmployeesReportByHireDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allEmployeesReportByID.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allEmployeesReportByID.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allEmployeesReportBySalary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allEmployeesReportBySalary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allGMOrders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allGMOrders.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allPassengerDetailsByDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allPassengerDetailsByDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allPassengerName.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allPassengerName.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPassengersReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AllPassengersReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="byScheduleID.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>byScheduleID.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeLogs.resx">
+      <DependentUpon>frmEmployeeLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassengerLogs.resx">
+      <DependentUpon>frmPassengerLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generateTic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>generateTic.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketByID.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ticketByID.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketsBySource.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ticketsBySource.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCoachesToTrain.resx">
+      <DependentUpon>frmAddCoachesToTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSchedule.resx">
+      <DependentUpon>frmAddSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddStations.resx">
+      <DependentUpon>frmAddStations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddStationsToRoute.resx">
+      <DependentUpon>frmAddStationsToRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassDetails.resx">
+      <DependentUpon>frmClassDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTrain.resx">
+      <DependentUpon>frmAddTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPassenger.resx">
+      <DependentUpon>frmAddPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCompany.resx">
+      <DependentUpon>frmAddCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddTicket.resx">
+      <DependentUpon>frmAddTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateOrdersReport.resx">
+      <DependentUpon>frmGenerateOrdersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGMOrderDetails.resx">
+      <DependentUpon>frmGMOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGMTicketDetails.resx">
+      <DependentUpon>frmGMTicketDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGMTicketDetailsByDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>frmGMTicketDetailsByDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveOrder.resx">
+      <DependentUpon>frmRemoveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoachDetails.resx">
+      <DependentUpon>frmCoachDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompanyDetails.resx">
+      <DependentUpon>frmCompanyDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPassenger.resx">
+      <DependentUpon>frmEditPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditRoute.resx">
+      <DependentUpon>frmEditRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddRoute.resx">
+      <DependentUpon>frmAddRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPanel.resx">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLogin.resx">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditEmployee.resx">
+      <DependentUpon>frmEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditTrain.resx">
+      <DependentUpon>frmEditTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateTicket.resx">
+      <DependentUpon>frmGenerateTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetOrder.resx">
+      <DependentUpon>frmGetOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetOrderDetails.resx">
+      <DependentUpon>frmGetOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetPayment.resx">
+      <DependentUpon>frmGetPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveCompany.resx">
+      <DependentUpon>frmRemoveCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveSchedule.resx">
+      <DependentUpon>frmRemoveSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveTicket.resx">
+      <DependentUpon>frmRemoveTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTicketDetails.resx">
+      <DependentUpon>frmTicketDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlaceOrder.resx">
+      <DependentUpon>frmPlaceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveEmployee.resx">
+      <DependentUpon>frmRemoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemovePassenger.resx">
+      <DependentUpon>frmRemovePassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveTrain.resx">
+      <DependentUpon>frmRemoveTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchEmployee.resx">
+      <DependentUpon>frmSearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchSchedule.resx">
+      <DependentUpon>frmSearchSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchStation.resx">
+      <DependentUpon>frmSearchStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchTrain.resx">
+      <DependentUpon>frmSearchTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStationDetails.resx">
+      <DependentUpon>frmStationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGMLogin.resx">
+      <DependentUpon>frmGMLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGMPanel.resx">
+      <DependentUpon>frmGMPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperatorLogin.resx">
+      <DependentUpon>frmOperatorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperatorPanel.resx">
+      <DependentUpon>frmOperatorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetEmployeeDetails.resx">
+      <DependentUpon>frmGetEmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrainDetails.resx">
+      <DependentUpon>frmTrainDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewProfile.resx">
+      <DependentUpon>frmViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewSchedule.resx">
+      <DependentUpon>frmViewSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generateTicket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>generateTicket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gmAllOrdersByComp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>gmAllOrdersByComp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gmOrdersToFromDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>gmOrdersToFromDate.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gmTodayOrders.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>gmTodayOrders.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordersReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ordersReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainPanel.resx">
+      <DependentUpon>frmMainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveRoute.resx">
+      <DependentUpon>frmRemoveRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchPassenger.resx">
+      <DependentUpon>frmSearchPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchRoute.resx">
+      <DependentUpon>frmSearchRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCoaches.resx">
+      <DependentUpon>frmAddCoaches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveStation.resx">
+      <DependentUpon>frmRemoveStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketByDestination.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ticketByDestination.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketDetailsAll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ticketDetailsAll.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ordersDataSet.xsc">
+      <DependentUpon>ordersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ordersDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ordersDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ordersDataSet.xss">
+      <DependentUpon>ordersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ticketDataset.xsc">
+      <DependentUpon>ticketDataset.xsd</DependentUpon>
+    </None>
+    <None Include="ticketDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ticketDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ticketDataset.xss">
+      <DependentUpon>ticketDataset.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Capture.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

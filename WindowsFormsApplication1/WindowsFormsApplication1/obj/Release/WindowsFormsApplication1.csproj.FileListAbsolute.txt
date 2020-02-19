@@ -1,0 +1,36 @@
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.aloginpage.resources
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.gmloginpage.resources
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.ologinpage.resources
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.titlepage.resources
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
+C:\Users\Sheikh Amaan Asghar\Desktop\Projects & Assignments\RMS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.operatorrolepage.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmSignUp.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmAdminLogin.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmOperatorLogin.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmMainPanel.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmAdminPanel.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmStationDetails.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmAddSchedule.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmAddEmployee.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmEditEmployee.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmRemoveEmployee.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmRemovePassenger.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmSearchStation.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmGMLogin.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmGMPanel.resources
+D:\Previous Laptop\BSCS Fall-15 Semester1\Semester 5\Database Management Systems\Project\WindowsFormsApplication1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.frmOperatorPanel.resources
